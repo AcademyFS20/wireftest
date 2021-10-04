@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Righteous&display=swap');
+
 *, ::before, ::after {
     box-sizing: border-box;
     margin: 0;
@@ -7,25 +9,39 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Righteous', cursive; color: rgb(206, 250, 246);
     background: #f1f1f1;
+    background-image: linear-gradient(to right top, #c2b0ba, #c5b5be, #c8bac3, #ccc0c7, #cfc5cb, #d2c8ce, #d4cbd0, #d7ced3, #dad0d6, #dcd2d8, #dfd4db, #e1d6de);
 }
-
+    
 
 /*  <!-- Navigation verticale / Left Fixed Navbar --> */
 .nav-gauche {
     width: 300px;
     height: 100vh;
     min-height: 800px;
-    background: #333;
+    background: rgb(156, 241, 223);
     position: fixed;
     top: 0;
-    left: -300px;
-    border-right: 1px dashed #f1f1f1;
     z-index: 5;
     transition: all 0.2s ease-in-out;
+    color: rgb(13, 14, 13);
+    font-family: 'Righteous'; color: blanchedalmond;
+
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        align-content: space-around;
+        background-image: linear-gradient(to left top, #c2b0ba, #c5b5be, #c8bac3, #ccc0c7, #cfc5cb, #d2c8ce, #d4cbd0, #d7ced3, #dad0d6, #dcd2d8, #dfd4db, #e1d6de);
+        
 }
 
+.cercle-portrait img{
+
+    border-radius: 50%;
+}
 
 /************************ HOME SECTION **********************/
 .accueil {
@@ -41,7 +57,7 @@ body {
 }
 h1 {
     font-size: 90px;
-    font-family: 'Abril Fatface', sans-serif;
+    font-family: 'Righteous', sans-serif;
     margin: 0 60px;
     padding-top: 210px;
 }
@@ -68,7 +84,7 @@ h1 {
 .btn-acc2 {
     background: transparent;
     border: 2px solid black;
-    color: black;
+    color: rgb(247, 245, 245);
     font-weight: 700;
 }
 .medias {
