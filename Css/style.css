@@ -11,7 +11,7 @@ html {
 body {
     font-family: 'Righteous', cursive; color: rgb(206, 250, 246);
     background: #f1f1f1;
-    background-image: linear-gradient(to right top, #c2b0ba, #c5b5be, #c8bac3, #ccc0c7, #cfc5cb, #d2c8ce, #d4cbd0, #d7ced3, #dad0d6, #dcd2d8, #dfd4db, #e1d6de);
+    background-image: linear-gradient(to bottom, #161818, #2d4848, #447f7c, #5bbab2, #76f9e9);
 }
     
 
@@ -34,7 +34,7 @@ body {
         justify-content: space-between;
         align-items: center;
         align-content: space-around;
-        background-image: linear-gradient(to left top, #c2b0ba, #c5b5be, #c8bac3, #ccc0c7, #cfc5cb, #d2c8ce, #d4cbd0, #d7ced3, #dad0d6, #dcd2d8, #dfd4db, #e1d6de);
+        background-image: linear-gradient(to bottom, #161818, #2d4848, #447f7c, #5bbab2, #76f9e9);
         
 }
 
@@ -108,7 +108,9 @@ h1 {
     border: 2px solid #333;
 }
 .icone-medias {
-    width: 30px;
+    width: 40px;
+    display: flex;
+    justify-items: end;
 }
 .btn-rond {
     width: 70px;
