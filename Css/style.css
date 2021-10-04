@@ -37,7 +37,37 @@ body {
         background-image: linear-gradient(to bottom, #161818, #2d4848, #447f7c, #5bbab2, #76f9e9);
         
 }
+.nav-gauche a 
+{
+    text-decoration: none;
 
+}
+.nav-gauche a::before
+{
+    content: "";
+    background-color: cornsilk;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin: 10px auto;
+}
+.nav-gauche a:hover::before
+{
+    width: 100px;
+}
+.nav-gauche a::after
+{
+    content: "";
+    background-color: cornsilk;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin: 10px auto;
+}
+.nav-gauche a:hover::after
+{
+    width: 100px;
+}
 .cercle-portrait img{
 
     border-radius: 50%;
