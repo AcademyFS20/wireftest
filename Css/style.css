@@ -14,8 +14,62 @@ body {
     background-image: linear-gradient(to bottom, #161818, #2d4848, #447f7c, #5bbab2, #f97676);
 }
     
+@media screen and (max-width: 998px) {
+    .btn-rond{
+        visibility: hidden;
+    }
+    .burger{
+        visibility: visible;
+    }
+    }
+    
+
+    
 
 /*  <!-- Navigation verticale / Left Fixed Navbar --> */
+.burger {
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    margin: 15px;
+    z-index: 10px;
+    background-color: rgb(66, 15, 13);
+    position: absolute;
+    transform: translateY(20px);
+}
+
+.line {
+
+    position: absolute;
+    width:70%;
+    height:6px;
+    top:13px;
+    left: 9px;
+    background-color: white;
+ }
+ 
+ .sub-line::before{
+ 
+     content:'';
+      width:100%;
+      position: absolute;
+     height:6px;
+     top:16px;
+     background-color: white;
+ 
+ }
+ 
+ .sub-line::after{
+ 
+     content:'';
+      width:100%;
+      position: absolute;
+     height:6px;
+     top:32px;
+     background-color: white;
+ 
+ }
+
 .nav-gauche {
     width: 300px;
     height: 100vh;
@@ -23,7 +77,8 @@ body {
     background: rgb(66, 15, 13);
     position: fixed;
     top: 0;
-    z-index: 5;
+    left: -300;
+    z-index: -1;
     transition: all 0.2s ease-in-out;
     color: rgb(13, 14, 13);
     font-family: 'Righteous'; 
@@ -77,6 +132,7 @@ body {
     height: 70px;
     color: rgb(66, 15, 13);
 }
+
 
 /************************ HOME SECTION **********************/
 .accueil {
