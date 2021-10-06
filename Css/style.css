@@ -86,7 +86,7 @@ body {
     background: rgb(66, 15, 13);
     position: fixed;
     top: 0;
-    left: 0px;
+    left: 0;
     z-index: 1;
     transition: left 0.4s ease;
     color: rgb(13, 14, 13);
@@ -274,13 +274,47 @@ h1 {
     margin-left: 50px;
     margin-right: 60px;
     width: 50%;
+    font-size: 19px;
 }
 
 .pres-droite {
     margin-right: 50px;
     margin-left: 50px;
     width: 400px;
+    font-size: 19px;
+    list-style-type: none;
 }
 hr.h3 {
     border: 1xp solid white;
 }
+.portfolio {
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: stretch;
+	align-content: center;
+    width:30%;
+    position: relative;
+    left:400px;
+
+}
+.titre-port {
+    text-align: center;
+    
+}
+.cont-portfolio {
+        display: grid;
+        grid-template-columns: repeat(3,60%);
+        grid-gap: 30px;
+        
+       
+    }
+
+
+.cont-img-port img {
+
+    
+    height:150px;
+}
+
