@@ -14,3 +14,4 @@ typewriter
   .typeString('<strong> and an <span style="color: #57221F;"> artist </span> ! </strong>')
   .pauseFor(1000)
   .start();
+

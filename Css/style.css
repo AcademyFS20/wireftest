@@ -14,17 +14,6 @@ body {
     background-image: linear-gradient(to left bottom, #f9f8f8, #f1efef, #e9e6e6, #e2ddde, #dad4d5);;
 }
     
-@media screen and (max-width: 998px) {
-    .btn-rond{
-        visibility: hidden;
-    }
-    .burger{
-        visibility: visible;
-    }
-    }
-    
-
-    
 
 /*  <!-- Navigation verticale / Left Fixed Navbar --> */
 
@@ -36,16 +25,19 @@ body {
     z-index: 10px;
     background-color: rgb(66, 15, 13);
     position: absolute;
-    transform: translateY(20px);
     cursor: pointer;
-    transition: left 0.4s ease;
+    
 }
-.burger.click{
-    left: 300px;
-}
-.burger.click span::before{
-    content: '\f00d';
-}
+.menu-btn-burger {
+    position: fixed;
+    z-index: 100;
+    width: 50px;
+    height: 50px;
+    top: 70px;
+    left: 135px;
+    display:none;
+
+  }
 
 .line {
 
@@ -60,8 +52,8 @@ body {
  .sub-line::before{
  
      content:'';
-      width:100%;
-      position: absolute;
+     width:100%;
+     position: absolute;
      height:6px;
      top:16px;
      background-color: white;
@@ -79,6 +71,7 @@ body {
  
  }
 
+    
 .nav-gauche {
     width: 300px;
     height: 100vh;
@@ -284,6 +277,9 @@ h1 {
     font-size: 19px;
     list-style-type: none;
 }
+.liste-presentation li{
+    list-style: none
+}
 hr.h3 {
     border: 1xp solid white;
 }
@@ -301,20 +297,70 @@ hr.h3 {
 }
 .titre-port {
     text-align: center;
+    margin-bottom: 10px;
+    text-shadow: 2px rgb(78, 78, 78);
+    
     
 }
 .cont-portfolio {
         display: grid;
         grid-template-columns: repeat(3,60%);
-        grid-gap: 30px;
+        grid-gap: 40px;
         
        
     }
 
+.cont-portfolio img {
 
-.cont-img-port img {
-
-    
-    height:150px;
+        height:150px;
 }
 
+.item {
+    -webkit-box-shadow: 3px 6px 12px 4px rgba(0,0,0,0.78); 
+    box-shadow: 3px 6px 12px 4px rgba(0,0,0,0.78);
+    border: rgb(107, 78, 77) 1px solid;
+    width: fit-content;
+}
+.btn-projets {
+    display: inline-flex;
+    width: 150px;
+    height: 50px;
+    text-decoration: none;
+    background: transparent;
+    justify-content: center;
+    align-items: center;
+    color: rgb(66, 15, 13);
+    margin: 10px 0 0 0;
+    border-radius: 2px;
+    font-size: 18px;
+    border:rgb(66, 15, 13) 1px solid;
+    margin-bottom: 6px;
+}
+.vague1 {
+    
+    text-align-last: center;
+}
+.vague2 {
+    text-align-last: center;
+}
+.vague3 {
+    text-align-last: center;
+
+}
+
+.titre-exp {
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: stretch;
+	align-content: stretch;
+    text-align: center;
+}
+.grille-skill {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: end;
+    width: calc(100%-300px);
+    
+}
